@@ -37,6 +37,40 @@
     }
 
     .pTag {
-        @apply font-Exo font-normal leading-5 md:leading-6 text-xs md:text-sm text-black opacity-70 tracking-[1px]
+        @apply font-Exo font-normal leading-5 md:leading-6 text-xs sm:text-sm md:text-base text-black opacity-70 tracking-[1px]
     }
+}
+
+.swiper-pagination {
+    position: unset !important;
+}
+
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 0.23 !important;
+    background: #A854E9 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px !important;
+    height: 8px !important;
+    opacity: 1 !important;
+    background: #A854E9 !important;
+    border-radius: 22px !important;
+}
+
+.swiper-slide-active div {
+    position: relative !important;
+    border-color: #A854E9 !important;
+}
+
+.swiper-slide-active div::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute !important;
+    background-color: #A854E9;
+    left: 0;
+    bottom: 0;
 }
