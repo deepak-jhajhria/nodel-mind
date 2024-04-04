@@ -4,7 +4,7 @@ import { FacebookIcon, InstaIcon, LinkdenIcon, LogoFooter, TwiterIcon } from "./
 const Footer = () => {
     const icons = [{ link: "http://www.facebook.com", logo: (<FacebookIcon />) }, { link: "http://www.instagram.com", logo: (<InstaIcon />) }, { link: "http://www.twitter.com", logo: (<TwiterIcon />) }, { link: "http://www.linkden.com", logo: (<LinkdenIcon />) }]
     return (
-        <footer className="bg-[url(/assets/images/png/footerbg.png)] bg-cover bg-center bg-no-repeat">
+        <footer className="bg-[url(/assets/images/webp/footerbg.webp)] bg-cover bg-center bg-no-repeat">
             <div className="container pt-[120px] sm:pt-[138px]">
                 <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 mb-10 md:mb-[52px]">
                     <div className="col-span-2 mb-6 sm:mb-10 md:col-span-3 lg:col-span-4 md:mb-0">

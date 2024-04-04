@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div id="aboutUs" className="sm:mt-16 md:mt-[100px] lg:mt-[150px] relative">
             <div className="container grid items-center grid-cols-1 gap-8 sm:gap-12 lg:gap-20 lg:grid-cols-2">
                 <div className="flex justify-center order-2 lg:order-1">
-                    <Image className="rounded-tr-[50px] w-full sm:w-[80%] lg:w-full h-auto" src="/assets/images/png/aboutusImg.png" alt="image" width={567} height={544} priority />
+                    <Image className="rounded-tr-[50px] w-full sm:w-[80%] lg:w-full object-cover max-h-[567px]" src="/assets/images/webp/aboutusImg.webp" alt="image" width={567} height={544} priority />
                 </div>
                 <div className="flex flex-col lg:max-w-[521px] order-1 lg:order-2">
                     <StarLine para="About Us" />

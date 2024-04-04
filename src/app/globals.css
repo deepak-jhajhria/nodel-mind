@@ -21,7 +21,7 @@ html {
     }
 
     .bg-header {
-        @apply bg-[url(/assets/images/png/herobg2.png)] lg:bg-[url(/assets/images/png/herobg.png)] bg-no-repeat bg-cover bg-left md:bg-center
+        @apply bg-[url(/assets/images/webp/herobg2.webp)] lg:bg-[url(/assets/images/webp/herobg.webp)] bg-no-repeat bg-cover bg-left md:bg-center
     }
 
     .h1 {

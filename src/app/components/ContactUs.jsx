@@ -62,7 +62,7 @@ const ContactUs = () => {
                     </form>
                 </div>
                 <div className="flex">
-                    <Image className="object-cover w-full rounded-xl" src="/assets/images/png/contactusimg.png" alt="image" width={598} height={572} />
+                    <Image className="object-cover w-full rounded-xl max-h-[560px]" src="/assets/images/webp/contactusimg.webp" alt="image" width={598} height={572} />
                 </div>
                 {show && (
                     <div className="fixed w-[300px] h-[200px] bg-white shadow-xl rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 flex flex-col justify-center items-center gap-8 z-30">
