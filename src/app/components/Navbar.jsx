@@ -44,7 +44,7 @@ const Navbar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} size={30} rounded distance="sm" direction='right' duration={0.5} color='#9A5DEC' />
         </div>
       </div>
-      <div id='scroll' className="fixed top-[67px] md:top-[76px] lg:top-[83px] w-full z-10">
+      <div id='scroll' className="fixed top-[67px] md:top-[76px] lg:top-[86px] w-full z-10">
         <div className="h-[6px]  sm:h-2 w-full">
           <div className=" bg-[#8F61E7] rounded-r-full h-[5px] sm:h-[7px] w-0" id="progressBar"></div>
         </div>
