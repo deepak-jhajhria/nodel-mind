@@ -18,15 +18,15 @@ const Faq = () => {
         <div className="mt-10 sm:mt-16 md:mt-[100px] lg:mt-[150px]">
             <div className="container">
                 <h2 className="text-center h2">Frequently <span>Asked Questions</span></h2>
-                <p className="text-center pTag max-w-[497px] mx-auto mt-3 md:mt-4">Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat mi leo. Nibh nisl consequat metus.</p>
-                <div className="max-w-[776px] mt-[52px] mx-auto flex flex-col gap-[18px]">
+                <p className="text-center pTag max-w-[497px] mx-auto mt-2 sm:mt-3 md:mt-4">Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat mi leo. Nibh nisl consequat metus.</p>
+                <div className="max-w-[776px] mt-8 sm:mt-10 md:mt-[52px] mx-auto flex flex-col gap-[18px]">
                     {accordionData.map((item, index) => (
-                        <div className={`${open === index ? "relative after:absolute after:bg-[#A854E9] after:w-full after:h-[5px] after:bottom-0 after:left-0" : " border-opacity-20"} border border-[#A854E9] rounded-md p-6 overflow-hidden`} key={item.title}>
+                        <div className={`${open === index ? "relative after:absolute after:bg-[#A854E9] after:w-full after:h-[5px] after:bottom-0 after:left-0" : " border-opacity-20"} border border-[#A854E9] rounded-md p-4 sm:p-6 overflow-hidden`} key={item.title}>
                             <div onClick={() => toggleAccordion(index)} className={` ${open === index ? "" : ""} cursor-pointer flex items-center justify-between w-full`}>
-                                <p className={`text-base font-medium  font-Outfit ${open === index ? "text-black" : "text-[#4D4D4D]"}`}>{item.title}</p>
+                                <p className={`text-sm sm:text-base font-medium  font-Outfit ${open === index ? "text-black" : "text-[#4D4D4D]"}`}>{item.title}</p>
                                 <span className="">{open === index ? (<span><FaUp /></span>) : (<span ><FaDown /></span>)}</span>
                             </div>
-                            <p className={`overflow-hidden duration-300 w-[92%] ${open === index ? "max-h-36 mt-2 md:mt-3" : "max-h-0"}`}>{item.content}</p>
+                            <p className={`overflow-hidden pTag duration-500 sm:w-[92%] ${open === index ? "max-h-36 mt-2 md:mt-3" : "max-h-0"}`}>{item.content}</p>
                         </div>))
                     }
                 </div>

@@ -2,7 +2,7 @@ import { Star } from "./Icons"
 
 export const StarLine = (props) => {
     return (
-        <p className="flex items-center gap-[6px] font-Exo font-normal text-xs md:text-sm text-[#131200]"><span><Star /></span>{props.para}</p>
+        <p className="flex items-center gap-[6px] font-Exo font-normal text-sm md:text-base justify-center md:justify-start text-[#131200]"><span><Star /></span>{props.para}</p>
     )
 }
 export const CommonBtn = (props) => {

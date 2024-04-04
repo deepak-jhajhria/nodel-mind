@@ -5,31 +5,27 @@
 
 @layer components {
     .mobileview {
-        @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-[#00141B] bg-cover bg-center top-0 max-md:text-black max-lg:items-center max-lg:justify-center max-lg:min-h-screen
-    }
-
-    .navLinks {
-        @apply relative after:absolute after:w-0 after:bg-white after:h-[2px] after:left-0 after:-bottom-[2px] hover:text-white hover:after:w-full after:duration-300 hover:opacity-100
+        @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-white bg-cover bg-center top-0 max-lg:items-center max-lg:justify-center max-lg:min-h-screen max-lg:z-50
     }
 
     .links {
-        @apply font-normal text-sm 2xl:text-lg text-[#131200] opacity-70 duration-300 hover:opacity-100 capitalize font-Exo
+        @apply font-normal text-sm sm:text-base 2xl:text-lg text-[#131200] opacity-70 duration-300 capitalize font-Exo relative after:absolute after:w-0 after:bg-white after:h-[2px] after:left-0 after:-bottom-[2px] hover:after:w-full after:duration-300 hover:opacity-100
     }
 
     .bg-header {
-        @apply bg-[url(/assets/images/png/herobg.png)]
+        @apply bg-[url(/assets/images/png/herobg2.png)] lg:bg-[url(/assets/images/png/herobg.png)] bg-no-repeat bg-cover bg-left md:bg-center
     }
 
     .h1 {
-        @apply font-light text-4xl md:text-5xl xl:text-[64px] text-black capitalize font-Outfit xl:leading-[76px]
+        @apply font-light text-center md:text-start text-4xl md:text-5xl xl:text-[64px] text-black capitalize font-Outfit xl:leading-[76px]
     }
 
     .h1 span {
-        @apply font-extrabold text-black font-Montserrat xl:leading-[70px]
+        @apply font-semibold xl:leading-[70px] text-3xl md:text-4xl lg:text-5xl
     }
 
     .h2 {
-        @apply font-light text-3xl md:text-5xl text-black capitalize font-Outfit xl:leading-[57px]
+        @apply font-light text-center md:text-start text-3xl md:text-5xl text-black capitalize font-Outfit xl:leading-[57px]
     }
 
     .h2 span {
@@ -37,7 +33,7 @@
     }
 
     .pTag {
-        @apply font-Exo font-normal leading-5 md:leading-6 text-xs sm:text-sm md:text-base text-black opacity-70 tracking-[1px]
+        @apply font-Exo font-normal leading-5 md:leading-6 text-xs sm:text-sm md:text-base text-black opacity-70
     }
 }
 
