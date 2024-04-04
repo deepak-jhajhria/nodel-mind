@@ -7,7 +7,7 @@ export const StarLine = (props) => {
 }
 export const CommonBtn = (props) => {
     return (
-        <button className={`bg-gradient-to-br to-[#A854E9] to-50% from-[#4F91FC] rounded-md py-[14px] px-6 font-Outfit font-semibold text-sm text-white ${props.cstm}`}>
+        <button className={`bg-gradient-to-br from-[#A456E9] from-15% to-[#8869EF] duration-300 hover:shadow-md hover:from-70% rounded-md py-[14px] px-6 font-Outfit font-semibold text-sm text-white ${props.cstm}`}>
             {props.name}
         </button>)
 }

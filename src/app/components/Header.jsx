@@ -14,9 +14,9 @@ const Header = () => {
                         <p className="mt-3 text-center md:mt-4 pTag md:text-start">At Noble Mind is a forward-thinking AI specialised company dedicated to reshaping the future of how we live, work, and learn. Our mission is to create ground-breaking AI solutions for Healthcare, Education, and beyond, aligning with Saudi Arabia’s Vision 2030.”</p>
                     </div>
                 </div>
-                <span className="relative after:absolute after:w-1/2 after:h-8 after:bottom-0 after:right-0 after:bg-black after:flex"></span>
+                <span className=" after:absolute w-0 2xl:after:w-full after:blur-[7px] after:h-8 after:-bottom-4 after:right-0 after:bg-[#FFFEFE] after:flex z-20"></span>
             </header>
-            <span className="absolute -translate-y-10 left-12"><PositionSvg /></span>
+            <span className="absolute z-30 -translate-y-10 left-12"><PositionSvg /></span>
         </div>
 
     )

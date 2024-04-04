@@ -15,7 +15,7 @@ const Footer = () => {
                                 <div className="flex items-center gap-4">
                                     {
                                         icons.map((items, index) => (
-                                            <Link className="mt-2" key={index} href={items.link} target="_blank"><span className="w-8 h-8 sm:w-[44px] sm:h-[44px] rounded-full border border-white flex justify-center items-center">{items.logo}</span></Link>
+                                            <Link className="mt-2" key={index} href={items.link} target="_blank"><span className="w-8 h-8 sm:w-[44px] sm:h-[44px] rounded-full border border-white duration-300 hover:border-[#9551D7] group hover:-translate-y-2 flex justify-center items-center">{items.logo}</span></Link>
                                         ))
                                     }
                                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="pt-3 sm:pt-4 text-sm font-normal text-center pb-6 sm:pb-9 font-Exo text-[#B8B8B4] border-t border-[#5A5950]">© Copyright  Noble Mind | All rights reserved. </p>
+            <p className="pt-3 px-3 sm:pt-4 text-sm font-normal text-center pb-6 sm:pb-9 font-Exo text-[#B8B8B4] border-t border-[#5A5950]">© Copyright {(new Date().getFullYear())} Noble Mind | All rights reserved. </p>
         </footer>
     )
 }
