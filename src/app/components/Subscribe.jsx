@@ -1,7 +1,9 @@
+import { PositionSvg } from "./Icons"
 
 const Subscribe = () => {
     return (
-        <div className="-mt-8 sm:mt-16 translate-y-[86px] mx-2">
+        <div id="blogs" className="-mt-8 sm:mt-16 translate-y-[86px] mx-2 relative">
+            <span className='absolute -translate-y-[100px] hidden sm:block left-5 sm:left-12'><PositionSvg /></span>
             <div className="container py-8 sm:py-[60px] flex flex-col items-center justify-center rounded-[20px] bg-[url(/assets/images/png/subscribe.png)] bg-cover bg-center bg-no-repeat">
                 <h2 className="!text-white h2 text-center">Subscribe to our <span className="!text-white">Newsletter!</span></h2>
                 <p className="mt-1 text-base font-normal text-center text-white md:mt-2 font-Exo">Be the first to get exclusive offers and the latest news.</p>

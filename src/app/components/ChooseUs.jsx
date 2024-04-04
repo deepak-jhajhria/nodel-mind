@@ -5,6 +5,7 @@ import { StarLine } from "./Reuse"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
+import { PositionSvg } from './Icons';
 const ChooseUs = () => {
     const Items = [
         { id: 1, title: 'Customer-Centric', para: 'Prioritize and anticipate client needs, ensuring our technology solutions consistently deliver unparalleled value.' },
@@ -13,7 +14,7 @@ const ChooseUs = () => {
         { id: 4, title: 'Customer-Centric', para: 'Prioritize and anticipate client needs, ensuring our technology solutions consistently deliver unparalleled value.' },
     ]
     return (
-        <div className="mt-10 sm:mt-16 md:mt-[100px] lg:mt-[150px]">
+        <div id='whyChooseUs' className="mt-10 sm:mt-16 md:mt-[100px] lg:mt-[150px] relative">
             <div className="container flex flex-col items-center justify-center overflow-hidden">
                 <StarLine para="Why Choose Us" />
                 <h2 className="mt-1 h2 md:mt-2 max-w-[521px] text-center">Driving Innovation & <span>Transforming Industries</span></h2>
@@ -47,8 +48,10 @@ const ChooseUs = () => {
                     </Swiper>
                     <div className="swiper-pagination mt-[10px]"><span className='swiper-pagination-bullet'></span></div>
                 </div>
-                <Image className='w-full mt-6 rounded-2xl sm:rounded-3xl object-cover max-sm:h-[300px] max-lg:h-[342px]' src="/assets/images/png/chooseusimg.png" alt='image' width={1140} height={527} priority />
+                <Image className='w-full mt-6 rounded-2xl sm:rounded-3xl object-cover max-sm:h-[300px] max-lg:h-[342px] max-2xl:h-[527px]' src="/assets/images/png/chooseusimg.png" alt='image' width={1140} height={527} priority />
             </div>
+            <span className='absolute left-5 sm:left-12 top-16 sm:top-10'><PositionSvg /></span>
+            <span className='absolute right-5 sm:right-12 bottom-10'><PositionSvg /></span>
         </div>
     )
 }

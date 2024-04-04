@@ -111,6 +111,18 @@ export const LinkdenIcon = () => {
         </svg>
     )
 }
+export const PositionSvg = () => {
+    return (
+        <svg className="w-10 h-16 md:w-[72px] md:h-[97px]" viewBox="0 0 72 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.4">
+                <path d="M59.6772 31.6374L-0.000137329 82.1833L5.71833 0.833847L59.6772 31.6374Z" fill="#A854E9" />
+                <path d="M70.9683 50.1198L7.47855 96.3252L19.6486 15.6759L70.9683 50.1198Z" stroke="black" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M7.4785 96.3252C8.50489 95.2051 39.0034 48.4397 39.0034 48.4397L19.6486 15.5358L7.4785 96.3252Z" stroke="black" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M70.9683 50.1198L39.0035 48.5797L7.47855 96.3252L70.9683 50.1198Z" stroke="black" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+            </g>
+        </svg>
+    )
+}
 export const LogoFooter = () => {
     return (
         <svg className="w-[150px] h-8 md:w-[222px] md:h-10" viewBox="0 0 242 42" fill="none" xmlns="http://www.w3.org/2000/svg">

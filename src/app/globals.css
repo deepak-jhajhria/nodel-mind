@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+}
+
 @layer components {
     .mobileview {
         @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-white bg-cover bg-center top-0 max-lg:items-center max-lg:justify-center max-lg:min-h-screen max-lg:z-50

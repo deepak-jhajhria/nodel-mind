@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { FaDown, FaUp } from "./Icons";
+import { FaDown, FaUp, PositionSvg } from "./Icons";
 
 const Faq = () => {
     const [open, setOpen] = useState(0);
@@ -15,7 +15,7 @@ const Faq = () => {
         { id: 5, title: "How can our company ensure data security with AI?", content: "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding." },
     ];
     return (
-        <div className="mt-10 sm:mt-16 md:mt-[100px] lg:mt-[150px]">
+        <div id="faq" className="mt-10 sm:mt-16 md:mt-[100px] lg:mt-[150px] relative">
             <div className="container">
                 <h2 className="text-center h2">Frequently <span>Asked Questions</span></h2>
                 <p className="text-center pTag max-w-[497px] mx-auto mt-2 sm:mt-3 md:mt-4">Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat mi leo. Nibh nisl consequat metus.</p>
@@ -31,6 +31,8 @@ const Faq = () => {
                     }
                 </div>
             </div>
+            <span className='absolute top-0 -translate-y-10 left-5 sm:left-12'><PositionSvg /></span>
+            <span className='absolute right-5 sm:right-12 lg:bottom-1/4'><PositionSvg /></span>
         </div>
     )
 }

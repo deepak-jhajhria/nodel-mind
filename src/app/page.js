@@ -4,6 +4,7 @@ import ContactUs from "./components/ContactUs";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ScrollTop from "./components/ScrollTop";
 import Subscribe from "./components/Subscribe";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Faq />
       <Subscribe />
       <Footer />
+      <ScrollTop />
     </div>
   );
 }

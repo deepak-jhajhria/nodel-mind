@@ -1,10 +1,11 @@
+import { PositionSvg } from "./Icons"
 import Navbar from "./Navbar"
 import { StarLine } from "./Reuse"
 
 const Header = () => {
     return (
-        <div>
-            <header className="bg-header min-h-[610px] md:min-h-[810px] 2xl:min-h-[900px] flex-grow-1 flex items-center justify-center relative">
+        <div className="relative ">
+            <header id="home" className="bg-header min-h-[610px] md:min-h-[810px] 2xl:min-h-[900px] flex-grow-1 flex items-center justify-center relative">
                 <Navbar />
                 <div className="container grid grid-cols-2">
                     <div className="col-span-2 lg:col-span-1 max-w-[584px]">
@@ -15,6 +16,7 @@ const Header = () => {
                 </div>
                 <span className="relative after:absolute after:w-1/2 after:h-8 after:bottom-0 after:right-0 after:bg-black after:flex"></span>
             </header>
+            <span className="absolute -translate-y-10 left-12"><PositionSvg /></span>
         </div>
 
     )

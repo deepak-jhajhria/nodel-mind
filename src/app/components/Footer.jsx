@@ -4,7 +4,7 @@ import { FacebookIcon, InstaIcon, LinkdenIcon, LogoFooter, TwiterIcon } from "./
 const Footer = () => {
     const icons = [{ link: "http://www.facebook.com", logo: (<FacebookIcon />) }, { link: "http://www.instagram.com", logo: (<InstaIcon />) }, { link: "http://www.twitter.com", logo: (<TwiterIcon />) }, { link: "http://www.linkden.com", logo: (<LinkdenIcon />) }]
     return (
-        <footer className="bg-[#141305]">
+        <footer className="bg-[url(/assets/images/png/footerbg.png)] bg-cover bg-center bg-no-repeat">
             <div className="container pt-[120px] sm:pt-[138px]">
                 <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 mb-10 md:mb-[52px]">
                     <div className="col-span-2 mb-6 sm:mb-10 md:col-span-3 lg:col-span-4 md:mb-0">
@@ -25,19 +25,19 @@ const Footer = () => {
                     <div className="col-span-1 mr-4 lg:mr-[30px]">
                         <ul className="flex flex-col gap-[10px] sm:gap-[14px]">
                             <li className="text-base font-semibold text-white font-Outfit">Maine</li>
-                            <li className="mt-[2px]"><Link href={""} className="links text-[#FDFDFF]">Home</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">About Us</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">services</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">Why Choose Us</Link></li>
+                            <li className="mt-[2px]"><Link href={"#home"} className="links text-[#FDFDFF]">Home</Link></li>
+                            <li><Link href={"#aboutUs"} className="links text-[#FDFDFF]">About Us</Link></li>
+                            <li><Link href={"#services"} className="links text-[#FDFDFF]">services</Link></li>
+                            <li><Link href={"#whyChooseUs"} className="links text-[#FDFDFF]">Why Choose Us</Link></li>
                         </ul>
                     </div>
                     <div className="col-span-1 ml-4 lg:ml-[30px]">
                         <ul className="flex flex-col gap-[10px] sm:gap-[14px]">
                             <li className="text-base font-semibold text-white font-Outfit">Maine</li>
-                            <li className="mt-[2px]"><Link href={""} className="links text-[#FDFDFF]">Term & Conduction</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">Privacy Policy</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">Contact</Link></li>
-                            <li><Link href={""} className="links text-[#FDFDFF]">(629) 555-0129</Link></li>
+                            <li className="mt-[2px]"><Link href={"#termsAndCondution"} className="links text-[#FDFDFF]">Term & Conduction</Link></li>
+                            <li><Link href={"#privacy"} className="links text-[#FDFDFF]">Privacy Policy</Link></li>
+                            <li><Link href={"#contact"} className="links text-[#FDFDFF]">Contact</Link></li>
+                            <li><Link href={"#contact"} className="links text-[#FDFDFF]">(629) 555-0129</Link></li>
                         </ul>
                     </div>
                 </div>
