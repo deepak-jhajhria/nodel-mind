@@ -4,9 +4,12 @@ import { Logo } from "./Icons"
 import { useOverflowHidden } from "./Hooks";
 import { Twirl as Hamburger } from 'hamburger-react';
 import { CommonBtn } from "./Reuse";
+import { useEffect } from "react";
 const Navbar = () => {
   const [isOpen, setOpen] = useOverflowHidden(false);
-  window.onscroll = function () { scrollFunction(); progressBarScroll(); };
+  useEffect(() => {
+    window.onscroll = function () { scrollFunction(); progressBarScroll(); };
+  }, []);
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
