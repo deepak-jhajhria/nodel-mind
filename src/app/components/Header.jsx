@@ -5,7 +5,7 @@ import { StarLine } from "./Reuse"
 const Header = () => {
     return (
         <div className="relative ">
-            <header id="home" className="bg-header min-h-[610px] md:min-h-[810px] 2xl:min-h-[900px] flex-grow-1 flex items-center justify-center relative">
+            <header id="home" className="bg-header min-h-[550px] md:min-h-[810px] 2xl:min-h-[900px] flex-grow-1 flex items-center justify-center relative">
                 <Navbar />
                 <div className="container grid grid-cols-2">
                     <div className="col-span-2 lg:col-span-1 max-w-[584px]">

@@ -57,7 +57,7 @@ const ContactUs = () => {
                         </div>
                         <div className="flex flex-col w-full mt-3 sm:mt-4">
                             <label data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" className="pTag" htmlFor="name">Message</label>
-                            <textarea data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" className="border input border-[#D0D0CC] rounded-lg outline-none pTag py-[10px] sm:py-3 px-2 h-[100px] sm:h-[135px]" type="text" name="Name" id="massege" required />
+                            <textarea data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" className="border input border-[#D0D0CC] rounded-lg outline-none pTag py-[10px] sm:py-3 px-2 min-h-[100px] sm:min-h-[135px] resize-none" type="text" name="Name" id="massege" required />
                         </div>
                         <CommonBtn data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" cstm="mt-5 sm:mt-6" name="Submit" />
                     </form>
