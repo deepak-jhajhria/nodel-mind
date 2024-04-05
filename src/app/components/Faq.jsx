@@ -19,7 +19,7 @@ const Faq = () => {
             <div className="container">
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" className="text-center h2">Frequently <span>Asked Questions</span></h2>
                 <p data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease" className="text-center pTag max-w-[497px] mx-auto mt-2 sm:mt-3 md:mt-4">Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat mi leo. Nibh nisl consequat metus.</p>
-                <div className="max-w-[776px] mt-8 sm:mt-10 md:mt-[52px] mx-auto flex flex-col gap-[18px]">
+                <div className="max-w-[776px] mt-8 sm:mt-10 md:mt-[52px] mx-auto flex flex-col gap-[14px] sm:gap-[18px]">
                     {accordionData.map((item, index) => (
                         <div className={`${open === index ? "relative after:absolute after:bg-[#A854E9] after:w-full after:h-[5px] after:bottom-0 after:left-0" : " border-opacity-20"} border border-[#A854E9] rounded-md p-4 sm:p-6 overflow-hidden shadow-[0_4px_32px_0px_#00000014]`} key={item.title}>
                             <div onClick={() => toggleAccordion(index)} className={` ${open === index ? "" : ""} cursor-pointer flex items-center justify-between w-full`}>
