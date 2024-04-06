@@ -11,9 +11,9 @@ import Subscribe from "./components/Subscribe";
 import Preloader from "./components/Preloader";
 import { usePreloader } from "./components/Hooks";
 import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import 'aos/dist/aos.css';
 export default function Home() {
-  // useEffect(() => { AOS.init({ once: true, }); }, [])
+  useEffect(() => { AOS.init({ once: true, }); }, [])
   const isLoading = usePreloader();
 
   return (
