@@ -36,7 +36,7 @@ const ChooseUs = () => {
                         className='w-full'>
                         {
                             Items.map((items, index) => (
-                                <SwiperSlide data-aos="zoom-in" data-aos-duration="1000" key={index}>
+                                <SwiperSlide key={index}>
                                     <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease" className={`border border-[#EEDDFB] rounded-xl p-[18px] sm:max-w-[377px] 2xl:max-w-full w-full min-h-[180px] sm:min-h-[208px] overflow-auto`}>
                                         <span data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease" className='border-[7px] text-sm font-bold font-Outfit flex items-center justify-center rounded-full bg-gradient-to-tr from-[#A854E9] to-[#4F91FC] bg-clip-text text-transparent border-[#F4EAFC] h-9 w-9'>{items.id}</span>
                                         <p data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease" className='mt-3 text-xl font-normal font-Outfit text-[#131200]'>{items.title}</p>
