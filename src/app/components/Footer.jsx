@@ -37,7 +37,7 @@ const Footer = () => {
                             <li className="mt-[2px]"><Link href={"#termsAndCondution"} className="links text-[#FDFDFF]">Term & Conduction</Link></li>
                             <li><Link href={"#privacy"} className="links text-[#FDFDFF]">Privacy Policy</Link></li>
                             <li><Link href={"#contact"} className="links text-[#FDFDFF]">Contact</Link></li>
-                            <li><Link href={"#contact"} className="links text-[#FDFDFF]">(629) 555-0129</Link></li>
+                            <li><Link href={"tel:+ (629) 555-0129"} className="links text-[#FDFDFF]">(629) 555-0129</Link></li>
                         </ul>
                     </div>
                 </div>
