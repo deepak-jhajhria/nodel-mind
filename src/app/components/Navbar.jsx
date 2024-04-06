@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul className={`${isOpen ? "right-0" : "-right-full"} flex items-center gap-6 mobileview`}>
           <li><Link className="links" href={"#home"} onClick={() => setOpen(false)}>home</Link></li>
           <li><Link className="links" href={"#aboutUs"} onClick={() => setOpen(false)}>About Us</Link></li>
-          <li><Link className="links" href={"/services"} onClick={() => setOpen(false)}>Services</Link></li>
+          <li><Link className="links" href={"#services"} onClick={() => setOpen(false)}>Services</Link></li>
           <li><Link className="links" href={"#whyChooseUs"} onClick={() => setOpen(false)}>Why Choose Us</Link></li>
           <li><Link className="links" href={"#blogs"} onClick={() => setOpen(false)}>Blogs</Link></li>
           <li><Link className="links" href={"#faq"} onClick={() => setOpen(false)}>FAQ</Link></li>
